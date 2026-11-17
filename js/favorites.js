@@ -38,14 +38,14 @@ export function initFavoritesPage() {
 
     // Если избранное пустое
     if (favIds.length === 0) {
-        grid.hidden = true; // Используем стандартный атрибут hidden
-        if (emptyBlock) emptyBlock.hidden = false;
+        grid.style.display = 'none';
+        if (emptyBlock) emptyBlock.style.display = 'flex';
         return;
     }
 
     // Если есть товары — рендерим их
-    grid.hidden = false;
-    if (emptyBlock) emptyBlock.hidden = true;
+    grid.style.display = 'grid';
+    if (emptyBlock) emptyBlock.style.display = 'none';
     
     grid.replaceChildren(); // Очищаем перед рендером
 
