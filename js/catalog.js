@@ -171,7 +171,7 @@ export function initCatalog() {
     }
 
     function applyFilters() {
-        let filtered = [...products]; // Копия массива для сортировки (требование методички)
+        let filtered = [...products]; // Копия массива для сортировки
 
         // 1. Поиск
         const query = searchInput.value.trim().toLowerCase();
