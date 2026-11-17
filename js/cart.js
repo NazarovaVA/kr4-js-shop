@@ -137,12 +137,8 @@ export function initCartPage() {
 
             emptyBlock.append(emptyMsg, emptyGif);
             container.append(emptyBlock);
-            
-            if (summaryEl) summaryEl.hidden = true; // Скрываем блок итогов
             return;
         }
-
-        if (summaryEl) summaryEl.hidden = false; // Показываем блок итогов
 
         // Рендер товаров
         cart.forEach(item => {
